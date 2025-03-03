@@ -1,0 +1,134 @@
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b6b6b6;
+    color: #172121;
+}
+
+header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #BFACB5;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center; 
+    border-bottom: 2px solid #beaab3;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+header h1 {
+    margin: 10;
+    font-size: 35px;
+    text-shadow:
+    -1px -1px 0 #172121,  
+    1px -1px 0 #172121,
+    -1px 1px 0 #172121,
+    1px 1px 0 #172121;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.controls button,
+.controls input[type="color"],
+.controls input[type="number"] {
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #e5d0cc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e5d0cc;
+    color: #172121;
+}
+
+.controls button:hover {
+    background-color: #7F7B82;
+    color: #e5d0cc;
+    border: 1px solid #7F7B82;
+}
+
+.controls input[type="color"] {
+    height: 30px;
+    width: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    background-color: #e5d0cc;
+    border-top: 2px solid #7F7B82;
+}
+
+svg {
+    background-color: #e5d0cc;
+    border: 1px solid #007bff;
+    box-shadow: 0px 4px 6px #172121;
+}
+
+
+svg .selected {
+    stroke-dasharray: 4;
+    stroke-opacity: 0.7;
+    stroke: #444554;
+}
+
+circle {
+    fill: #0056b3;
+    stroke: #172121;
+    stroke-width: 1;
+}
+
+circle:hover {
+    fill: #0056b3;
+    stroke: #333;
+}
+
+circle.rotation-handle {
+    fill: green;
+    cursor: crosshair;
+}
+
+button#delete-element {
+    background-color: #e5d0cc;
+    color: #172121;
+    border: 1px solid #e5d0cc;
+}
+
+button#delete-element:hover {
+    background-color: #7F7B82;
+    color: #e5d0cc;
+    border: 1px solid #7F7B82;
+}
+
+button#undo,
+button#save-svg,
+button#export-png {
+    background-color: #e5d0cc;
+    color: #172121;
+    border: 1px solid #e5d0cc;
+}
+
+button#undo:hover,
+button#save-svg:hover,
+button#export-png:hover {
+    background-color: #7F7B82;
+    color: #e5d0cc;
+    border: 1px solid #7F7B82;
+}
+
